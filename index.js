@@ -88,6 +88,10 @@ export default class ReadMore extends React.Component {
           Hide
         </Text>
       );
+    } else {
+       if (this.props.renderNoMoreFooter) {
+          return this.props.renderNoMoreFooter();
+       }
     }
   }
 }
